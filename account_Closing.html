@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Account Closing Form</title>
+</head>
+<body>
+    <h1>Bank Account Closing Form</h1>
+    <form action="#" method="">
+        <table cellpadding="10">
+            <tbody>
+                <tr>
+                    <td>
+                        <label for="account_number">Account Number:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="account_number" name="account_number" required>
+                    </td>
+                    <td>
+                        <label for="customer_name">Customer Name:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="customer_name" name="customer_name" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="reason_for_closure">Reason for Closure:</label>
+                    </td>
+                    <td>
+                        <select id="reason_for_closure" name="reason_for_closure" required>
+                            <option value="Account not needed">Account not needed</option>
+                            <option value="Switched to another bank">Switched to another bank</option>
+                            <option value="Unsatisfactory service">Unsatisfactory service</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </td>
+                    <td>
+                        <label for="closing_date">Closing Date:</label>
+                    </td>
+                    <td>
+                        <input type="date" id="closing_date" name="closing_date" required>
+                    </td>
+                </tr>
+                <tr>
+                    <table cellpadding="10">
+                        <tr>
+                            <td>
+                                <label for="comments">Additional Comments:</label><br>
+                                <textarea id="comments" name="comments" rows="4" cols="90"></textarea>                        
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" align="center">
+                                <input type="submit" value="Submit">
+                            </td>
+                        </tr>
+                    </table>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>

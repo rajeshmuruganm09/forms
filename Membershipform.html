@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membershipform</title>
+</head>
+<body>
+
+    <h2>Membership Form</h2>
+    <p>Please fill in the form below to apply for membership.</p>
+
+<form action="/submit_membership_form" method="">
+
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required><br>
+  <br>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required><br>
+  <br>
+
+  <label for="phone">Phone:</label>
+  <input type="tel" id="phone" name="phone" required><br>
+  <br>
+
+  <label for="address">Address:</label>
+  <input type="text" id="address" name="address" placeholder="Streetadress & City" required>
+  <input type="text" id="address" name="address" placeholder="State" required><br>
+  <br>
+
+  <label for="membership_type">Membership Type:</label>
+  <select id="membership_type" name="membership_type" required>
+    <option value="" selected disabled>Select Membership Type</option>
+    <option value="basic">Basic</option>
+    <option value="standard">Standard</option>
+    <option value="premium">Premium</option>
+  </select><br>
+  <br>
+
+  <label for="payment_method">Payment Method:</label>
+  <input type="radio" id="credit_card" name="payment_method" value="credit_card" required>
+  <label for="credit_card">Credit Card</label>
+  <input type="radio" id="paypal" name="payment_method" value="paypal" required>
+  <label for="paypal">PayPal</label><br>
+  <br>
+
+  <label for="terms_and_conditions">Agree to Terms & Conditions:</label>
+  <input type="checkbox" id="terms_and_conditions" name="terms_and_conditions" required><br>
+  <br>
+
+  <button type="submit">Sumbit</button>
+</form>
+
+</body>
+</html>

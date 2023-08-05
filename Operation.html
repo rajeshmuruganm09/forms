@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operation</title>
+</head>
+<body>
+
+    <h2>Hospital Operation Request Form</h2>
+    <form action="#" method="">
+        <label for="patient_name">Patient Name:</label>
+        <input type="text" id="patient_name" name="patient_name" required><br><br>
+
+        <label for="patient_age">Patient Age:</label>
+        <input type="number" id="patient_age" name="patient_age" required><br><br>
+
+        <label for="patient_gender">Patient Gender:</label>
+        <select id="patient_gender" name="patient_gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br><br>
+
+        <label for="operation_type">Operation Type:</label>
+        <input type="text" id="operation_type" name="operation_type" required><br><br>
+
+        <label for="operation_date">Preferred Operation Date:</label>
+        <input type="date" id="operation_date" name="operation_date" required><br><br>
+
+        <label for="doctor_name">Preferred Doctor:</label>
+        <input type="text" id="doctor_name" name="doctor_name" required><br><br>
+
+        <label for="additional_info">Additional Information:</label><br>
+        <textarea id="additional_info" name="additional_info" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+    
+</body>
+</html>

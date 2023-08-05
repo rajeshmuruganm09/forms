@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Referralform</title>
+</head>
+<body>
+    
+    <h2>Referral Form</h2>
+    <form action="submit_referral.php" method="">
+        <input type="text" id="referrer_name" name="referrer_name" placeholder="Your Name" required>
+
+
+        <input type="email" id="referrer_email" name="referrer_email" placeholder="Your Email" required><br>
+        <br>
+
+        <input type="text" id="candidate_name" name="candidate_name" placeholder="Candidate's Name" required>
+
+        <input type="email" id="candidate_email" name="candidate_email" placeholder="Candidate's Email" value="Rajesh" required><br>
+        <br>
+
+        <input type="text" id="candidate_position" name="candidate_position" placeholder="Position Applying For" required><br>
+        <br>
+        <textarea id="referral_message" name="referral_message" rows="4" cols="45" maxlength="50" placeholder="Message (optional):"></textarea><br>
+        <br>
+
+        <input type="submit" value="Submit Referral">
+
+</body>
+</html>

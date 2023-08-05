@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Reimbursement Form</title>
+</head>
+<body>
+    <h1>Insurance Reimbursement Form</h1>
+    <form action="#" method="">
+
+        <table width="" border="0" cellpadding="10">
+            <tbody>
+                <tr>
+                    <td>
+                        <label for="policy_number">Policy Number:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="policy_number" name="policy_number" required>
+                    </td>
+                    <td>
+                        <label for="patient_name">Patient Name:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="patient_name" name="patient_name" required>
+                    </td>
+                </tr>
+    
+                <tr>
+                    <td>
+                        <label for="date_of_visit">Date of Visit:</label>
+                    </td>
+                    <td>
+                        <input type="date" id="date_of_visit" name="date_of_visit" required>
+                    </td>
+                    <td>
+                        <label for="doctor_name">Doctor's Name:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="doctor_name" name="doctor_name" required>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <label for="total_amount">Total Amount (USD):</label>
+                    </td>
+                    <td>
+                        <input type="number" id="total_amount" name="total_amount" step="0.01" required>
+                    </td>
+                    <td>
+                        <label for="insurance_company">Insurance Company:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="insurance_company" name="insurance_company" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="insurance_policy_holder">Insurance Policy Holder:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="insurance_policy_holder" name="insurance_policy_holder" required>
+                    </td>
+                    <td>
+                        <label for="insurance_policy_number">Insurance Policy Number:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="insurance_policy_number" name="insurance_policy_number" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="bank_account_number">Bank Account Number:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="bank_account_number" name="bank_account_number" required>
+                    </td>
+                    <td>
+                        <label for="bank_name">Bank Name:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="bank_name" name="bank_name" required>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <label for="bank_branch">Bank Branch:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="bank_branch" name="bank_branch" required>
+                    </td>
+                    <td>
+                        <label for="bank_ifsc">Bank IFSC Code:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="bank_ifsc" name="bank_ifsc" required>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <table cellpadding="10">
+                        <tr>
+                            <td>
+                                <label for="reason_for_visit">Reason for Visit:</label><br>
+                                <textarea id="reason_for_visit" name="reason_for_visit" rows="6" cols="100" required></textarea>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td align="center">
+                                <button type="submit">Submit</button>
+                            </td>
+                        </tr>
+                    </table>
+                </tr>
+
+               
+            </tbody>
+        </table>
+   
+    </form>
+</body>
+</html>

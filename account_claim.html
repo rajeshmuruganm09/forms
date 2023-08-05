@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bank Account Claim Form</title>
+</head>
+<body>
+  <h1>Bank Account Claim Form</h1>
+  <form action="#" method="">
+    <table cellpadding="10">
+        <tr>
+            <td>
+                <label for="account_number">Account Number:</label>
+            </td>
+            <td>
+                <input type="text" id="account_number" name="account_number" required>
+            </td>
+            <td>
+                <label for="full_name">Full Name:</label>
+            </td>
+            <td>
+                <input type="text" id="full_name" name="full_name" required>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="claim_reason">Reason for Claim:</label>
+            </td>
+            <td>
+                <select id="claim_reason" name="claim_reason" required>
+                    <option value="fraud">Fraudulent Activity</option>
+                    <option value="error">Bank Error</option>
+                    <option value="dispute">Transaction Dispute</option>
+                    <option value="other">Other</option>
+                  </select>
+            </td>
+            <td>
+                <label for="attachments">Attachments<br><small>(if any):</small></label>
+            </td>
+            <td>
+                <input type="file" id="attachments" name="attachments" accept="image/*, .pdf">
+            </td>
+        </tr>
+
+        <tr>
+            <table cellpadding="10">
+                <tr>
+                    <td>
+                        <label for="address">Address:</label><br>
+                        <textarea id="address" name="address" rows="4" cols="80" required></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="claim_description">Claim Description:</label><br>
+                        <textarea id="claim_description" name="claim_description" rows="4" cols="80" required></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" align="center">
+                        <button type="submit">Submit Claim</button>
+                    </td>
+                </tr>
+            </table>
+        </tr>
+    </table>
+  </form>
+</body>
+</html>

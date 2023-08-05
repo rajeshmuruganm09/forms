@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visa Application Form</title>
+</head>
+<body>
+  <h1>Visa Application Form</h1>
+  <form action="/submit_visa_form" method="">
+    <label for="full_name">Full Name:</label>
+    <input type="text" id="full_name" name="full_name" required><br><br>
+
+    <label for="passport_number">Passport Number:</label>
+    <input type="text" id="passport_number" name="passport_number" required><br><br>
+
+    <label for="nationality">Nationality:</label>
+    <input type="text" id="nationality" name="nationality" required><br><br>
+
+    <label for="date_of_birth">Date of Birth:</label>
+    <input type="date" id="date_of_birth" name="date_of_birth" required><br><br>
+
+    <label for="visa_type">Visa Type:</label>
+    <select id="visa_type" name="visa_type" required>
+      <option value="tourist">Tourist</option>
+      <option value="business">Business</option>
+      <option value="student">Student</option>
+    </select><br><br>
+
+    <label for="duration_of_stay">Duration of Stay (in days):</label>
+    <input type="number" id="duration_of_stay" name="duration_of_stay" required><br><br>
+
+    <label for="entry_date">Entry Date:</label>
+    <input type="date" id="entry_date" name="entry_date" required><br><br>
+
+    <label for="purpose_of_visit">Purpose of Visit:</label><br>
+    <textarea id="purpose_of_visit" name="purpose_of_visit" rows="4" cols="50" required></textarea><br><br>
+
+    <label for="contact_email">Contact Email:</label>
+    <input type="email" id="contact_email" name="contact_email" required><br><br>
+
+    <label for="contact_phone">Contact Phone:</label>
+    <input type="tel" id="contact_phone" name="contact_phone" required><br><br>
+
+
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>

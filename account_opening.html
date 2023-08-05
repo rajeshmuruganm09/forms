@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Account Opening Form</title>
+</head>
+<body>
+    <h1>Bank Account Opening Form</h1>
+    <form action="#" method="">
+        <table cellpadding="10">
+            <tbody>
+                <tr>
+                    <td>
+                        <label for="name">First Name:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="name" name="name" required>
+                    </td>
+                    <td>
+                        <label for="name">Last Neme</label>
+                    </td>
+                    <td>
+                        <input type="text" id="lastname" name="lastname" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">Email:</label>
+                    </td>
+                    <td>
+                        <input type="email" id="email" name="email" required>
+                    </td>
+                    <td>
+                        <label for="phone">Phone Number:</label>
+                    </td>
+                    <td>
+                        <input type="tel" id="phone" name="phone" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="accountType">Account Type:</label>
+                    </td>
+                    <td>
+                        <select id="accountType" name="accountType" required>
+                            <option value="" disabled selected>Select account type</option>
+                            <option value="savings">Savings Account</option>
+                            <option value="checking">Checking Account</option>
+                        </select>
+                    </td>
+                    <td>
+                        <label for="initialDeposit">Initial Deposit:</label>
+                    </td>
+                    <td>
+                        <input type="number" id="initialDeposit" name="initialDeposit" min="0" required>
+                    </td>
+                </tr>
+                <tr>
+                    <table cellpadding="10">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <label for="address">Address:</label><br>
+                                    <textarea id="address" name="address" rows="5" cols="80" required></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="4" align="center">
+                                
+                                    <button type="submit">Submit</button>
+                                
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>

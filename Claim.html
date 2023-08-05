@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claim Form</title>
+</head>
+<body>
+    <h1>Claim Form</h1>
+    <form action="#" method="">
+        <label for="claimant_name">Claimant Name:</label>
+        <input type="text" id="claimant_name" name="claimant_name" required><br><br>
+
+        <label for="policy_number">Policy Number:</label>
+        <input type="text" id="policy_number" name="policy_number" required><br><br>
+
+
+        <label for="claim_amount">Claim Amount:</label>
+        <input type="number" id="claim_amount" name="claim_amount" step="0.01" required><br><br>
+
+        <label for="claim_date">Claim Date:</label>
+        <input type="date" id="claim_date" name="claim_date" required><br><br>
+
+        <label for="contact_email">Contact Email:</label>
+        <input type="email" id="contact_email" name="contact_email" required><br><br>
+
+        <label for="contact_phone">Contact Phone:</label>
+        <input type="tel" id="contact_phone" name="contact_phone" required><br><br>
+
+        <label for="claim_description">Claim Description:</label><br>
+        <textarea id="claim_description" name="claim_description" rows="5" cols="40" required></textarea><br><br>
+        
+        <input type="submit" value="Submit Claim">
+    </form>
+</body>
+</html>

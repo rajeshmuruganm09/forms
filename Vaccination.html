@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaccination Form</title>
+</head>
+<body>
+    <h1>Vaccination Form</h1>
+    <form action="#" method="">
+        <label for="full-name">Full Name:</label>
+        <input type="text" id="full-name" name="full_name" required><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required><br><br>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="">Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br><br>
+
+        <label for="vaccine-type">Vaccine Type:</label>
+        <input type="radio" id="pfizer" name="vaccine_type" value="pfizer" required>
+        <label for="pfizer">Pfizer</label>
+        <input type="radio" id="moderna" name="vaccine_type" value="moderna" required>
+        <label for="moderna">Moderna</label>
+        <input type="radio" id="astrazeneca" name="vaccine_type" value="astrazeneca" required>
+        <label for="astrazeneca">AstraZeneca</label><br><br>
+
+        <label for="vaccination-date">Vaccination Date:</label>
+        <input type="date" id="vaccination-date" name="vaccination_date" required><br><br>
+
+        <label for="vaccination-time">Vaccination Time:</label>
+        <input type="time" id="vaccination-time" name="vaccination_time" required><br><br>
+
+        <label for="additional-comments">Additional Comments:</label><br>
+        <textarea id="additional-comments" name="additional_comments" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

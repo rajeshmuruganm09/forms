@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Disability Form</title>
+</head>
+<body>
+  <h1>Disability Application Form</h1>
+  <form action="#" method="">
+    <label for="full-name">Full Name:</label>
+    <input type="text" id="full-name" name="full-name" required><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" required><br><br>
+
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required><br><br>
+
+    <label for="disability-type">Disability Type:</label>
+    <select id="disability-type" name="disability-type" required>
+      <option value="" disabled selected>Select disability type</option>
+      <option value="physical">Physical Disability</option>
+      <option value="mental">Mental Disability</option>
+      <option value="visual">Visual Impairment</option>
+      <option value="hearing">Hearing Impairment</option>
+    </select><br><br>
+
+    <label for="documents">Supporting Documents:</label>
+    <input type="file" id="documents" name="documents"><br><br>
+
+    <label for="description">Description of Disability:</label><br>
+    <textarea id="description" name="description" rows="4" cols="50" required></textarea><br><br>
+
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>

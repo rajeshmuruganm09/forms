@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pension form</title>
+</head>
+<body>
+    
+    <h1>Pension Application Form</h1>
+
+<form action="/submit_pension_form" method="post">
+  <label for="full_name">Full Name:</label>
+  <input type="text" id="full_name" name="full_name" required><br><br>
+
+  <label for="date_of_birth">Date of Birth:</label>
+  <input type="date" id="date_of_birth" name="date_of_birth" required><br><br>
+
+  <label for="address">Address:</label><br>
+  <textarea id="address" name="address" rows="4" cols="50" required></textarea><br><br>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required><br><br>
+
+  <label for="phone">Phone:</label>
+  <input type="tel" id="phone" name="phone" required><br><br>
+
+  <label for="gender">Gender:</label>
+  <input type="radio" id="male" name="gender" value="male" required>
+  <label for="male">Male</label>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label>
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="other">Other</label><br><br>
+
+  <label for="employment_status">Employment Status:</label>
+  <select id="employment_status" name="employment_status" required>
+    <option value="">Select Employment Status</option>
+    <option value="employed">Employed</option>
+    <option value="unemployed">Unemployed</option>
+    <option value="retired">Retired</option>
+    <option value="self_employed">Self-Employed</option>
+  </select><br><br>
+
+  <label for="pension_type">Pension Type:</label>
+  <select id="pension_type" name="pension_type" required>
+    <option value="">Select Pension Type</option>
+    <option value="basic_pension">Basic Pension</option>
+    <option value="disability_pension">Disability Pension</option>
+    <option value="family_pension">Family Pension</option>
+    <option value="commutation_pension">Commutation Pension</option>
+  </select><br><br>
+
+  <label for="pension_amount">Pension Amount:</label>
+  <input type="number" id="pension_amount" name="pension_amount" required><br><br>
+
+  <label for="bank_account">Bank Account Number:</label>
+  <input type="text" id="bank_account" name="bank_account" required><br><br>
+
+  <label for="additional_details">Additional Details:</label><br>
+  <textarea id="additional_details" name="additional_details" rows="4" cols="50"></textarea><br><br>
+
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>

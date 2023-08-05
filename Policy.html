@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Policy Form</title>
+</head>
+<body>
+    <h1>Insurance Policy Form</h1>
+
+    <form action="#" method="">
+        <table cellpadding="10">
+            <tbody>
+                <tr>
+                    <td>
+                        <label for="policy_holder_name">Policy Holder Name:</label>
+                    </td>
+
+                    <td>
+                        <input type="text" id="policy_holder_name" name="policy_holder_name" required>
+                    </td>
+
+                    <td>
+                        <label for="policy_number">Policy Number:</label>
+                    </td>
+
+                    <td>
+                        <input type="text" id="policy_number" name="policy_number" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="insurance_type">Insurance Type:</label>
+                    </td>
+
+                    <td>
+                        <select id="insurance_type" name="insurance_type" required>
+                            <option value="life">Life Insurance</option>
+                            <option value="health">Health Insurance</option>
+                            <option value="auto">Auto Insurance</option>
+                        </select>
+                    </td>
+
+                    <td>
+                        <label for="policy_start_date">Policy Start Date:</label>
+                    </td>
+
+                    <td>
+                        <input type="date" id="policy_start_date" name="policy_start_date" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="policy_end_date">Policy End Date:</label>
+                    </td>
+
+                    <td>
+                        <input type="date" id="policy_end_date" name="policy_end_date" required>
+                    </td>
+
+                    <td>
+                        <label for="premium_amount">Premium Amount:</label>
+                    </td>
+
+                    <td>
+                        <input type="number" id="premium_amount" name="premium_amount" required>
+                    </td>
+                </tr>
+                <tr >
+                    <td colspan="4" align="center">
+                        <input type="submit" value="Submit">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Income Tax Returns Form</h1>
+
+  <form action="submit_tax_returns.php" method="">
+
+    <label for="full_name">Full Name:</label>
+    <input type="text" id="full_name" name="full_name" required>
+    <br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <br><br>
+
+    <label for="income">Total Income (in USD):</label>
+    <input type="number" id="income" name="income" required>
+    <br><br>
+
+    <label for="deductions">Total Deductions (in USD):</label>
+    <input type="number" id="deductions" name="deductions" required>
+    <br><br>
+
+    <label for="taxable_income">Taxable Income (in USD):</label>
+    <input type="number" id="taxable_income" name="taxable_income" readonly>
+    <br><br>
+
+    <label for="tax_rate">Tax Rate (%):</label>
+    <input type="number" id="tax_rate" name="tax_rate" required>
+    <br><br>
+
+    <label for="tax_amount">Total Tax Amount (in USD):</label>
+    <input type="number" id="tax_amount" name="tax_amount" readonly>
+    <br><br>
+
+    <label for="payment">Tax Payment (in USD):</label>
+    <input type="number" id="payment" name="payment" required>
+    <br><br>
+
+    <label for="refund">Tax Refund (in USD):</label>
+    <input type="number" id="refund" name="refund" readonly>
+    <br><br>
+
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+
+  </form>
+
+</body>
+</html>
